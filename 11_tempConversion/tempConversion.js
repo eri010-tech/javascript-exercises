@@ -10,13 +10,13 @@ const convertToFahrenheit = function (celsius) {
 // below is my answer, which I prefer because it requires less steps :) 
 const convertToCelsius = function(fahrenheit) {
   let celsiusConversion = (fahrenheit - 32) / 1.8;
-  let conversionAnswer = Math.round(celsiusConversion); 
+  let conversionAnswer = Math.round(celsiusConversion * 10) / 10; 
   return conversionAnswer; 
 };
 
 const convertToFahrenheit = function(celsius) {
   let fahrenheitConversion = (celsius * 1.8) + 32; 
-  let conversionAnswer = Math.round(fahrenheitConversion); 
+  let conversionAnswer = Math.round(fahrenheitConversion * 10) / 10; 
   return conversionAnswer; 
 };
 
